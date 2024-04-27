@@ -1,0 +1,32 @@
+//Go to your WordPress admin dashboard.
+//In the dashboard, go to "Plugins" and click on "Plugin Editor."
+//On the Plugin Editor page, look to the right for a select input called "Select plugin to edit."
+//Choose "Seraphinite Accelerator" from the list.
+//After selecting the plugin, locate the file named "content.php" in the list of plugin files.
+//Click on "content.php" to open it for editing.
+//Delete the code block that i write under
+
+
+
+
+
+if( $ctxProcess[ 'mode' ] == 'full' )
+{
+$itemhuddqr = HtmlNd::Parse(
+Ui::Tag( 'a',
+Ui::TagOpen( 'img', array( 'src' => 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJcEhZcwAAFxIAABcSAWef0lIAAABOUExURUdwTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANyQSi4AAAAZdFJOUwAU7Y9RHUj2hSgEu6fGceGYMw17PLDWXGe4ORhvAAAAz0lEQVQoz42S2RaDIAxEQUBkEXCX///RYtVY28TTPHJhEmbC2J+lFuHmGNtpqO0PlC5fFYW5wUWXQ/1xIScOkDvtpel7NYYWeCUPOjpxNes8XBj2g+beSEKTZlOuv6c0FXDLFPJF6G9RC+pTvMctmgpsFQuBcDDnQlzmhMONYrLKho7A7x/Da3M5kuFto5HS69s3QTzdoyWkw+FYh0FzJpowOoDbCOTXMowInoF6hMr8JM0E4BqN4Um6LN1BNb4jLD1Iv+WL2bMkY7RrEve3L/wzFnTO5UlaAAAAAElFTkSuQmCC', 'alt' => Wp::GetLocString( 'Seraphinite Accelerator', null, 'seraphinite-accelerator' ), 'style' => array_map( $ctxProcess[ 'isAMP' ] ? function( $v ) { return( $v ); } : function( $v ) { return( '' . $v . '!important' ); }, array( 'display' => 'inline-block', 'vertical-align' => 'top', 'position' => 'absolute' ) ) ) ) .
+Ui::Tag( 'span', sprintf( __( 'BannerText_%s', 'seraphinite-accelerator' ), Wp::GetLocString( 'Seraphinite Accelerator', null, 'seraphinite-accelerator' ) ) . Ui::TagOpen( 'br' ) . Ui::Tag( 'span', Wp::GetLocString( 'Turns on site high speed to be attractive for people and search engines.', null, 'seraphinite-accelerator' ), array( 'style' => array_map( $ctxProcess[ 'isAMP' ] ? function( $v ) { return( $v ); } : function( $v ) { return( '' . $v . '!important' ); }, array( 'font-size' => '0.7em' ) ) ) ), array( 'style' => array_map( $ctxProcess[ 'isAMP' ] ? function( $v ) { return( $v ); } : function( $v ) { return( '' . $v . '!important' ); }, array( 'display' => 'inline-block', 'text-align' => 'left', 'vertical-align' => 'top', 'font-size' => '16px', 'padding-left' => '36px' ) ) ) )
+, array( 'href' => Plugin::RmtCfgFld_GetLoc( PluginRmtCfg::Get(), 'Links.FrontendBannerUrl' ), 'target' => '_blank', 'style' => array_map( $ctxProcess[ 'isAMP' ] ? function( $v ) { return( $v ); } : function( $v ) { return( '' . $v . '!important' ); }, array( 'display' => 'block', 'clear' => 'both', 'text-align' => 'center', 'position' => 'relative', 'padding' => '0.5em', 'background-color' => 'transparent', 'color' => '#000', 'line-height' => 1 ) ) ) ) );
+if( $itemhuddqr && $itemhuddqr -> firstChild )
+if( $item = $doc -> importNode( $itemhuddqr -> firstChild, true ) )
+$ctxProcess[ 'ndBody' ] -> appendChild( $item );
+}
+
+
+
+//Ensure that you are removing the correct code block.
+//After removing the code, scroll down and click on the "Update File" button to save your changes.
+//Go to the Seraphinite Accelerator settings in your WordPress admin dashboard. Look for an option to clear the cache and select it.
+//After clearing the cache, visit your website to verify that the watermark has been removed from the footer
+//By following these steps, you should be able to remove the watermark from the Seraphinite Accelerator plugin's footer. 
+//Remember to create backups before making any changes, and be aware of the potential consequences of modifying plugin files.
